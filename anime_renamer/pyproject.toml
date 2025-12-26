@@ -1,0 +1,12 @@
+[project]
+name = "anime-renamer"
+version = "0.1.0"
+description = "Rename/move torrent anime files into Jellyfin naming structure"
+requires-python = ">=3.10"
+dependencies = [
+  "typer>=0.12",
+  "PyYAML>=6.0.1",
+]
+
+[project.scripts]
+anime-renamer = "anime_renamer.cli:app"
