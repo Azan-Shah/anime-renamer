@@ -1,0 +1,34 @@
+paths:
+  inbox_dir: "G:/anime-renamer/animefiles"
+  dest_root: "G:/anime-renamer/OUTPUT"
+  quarantine_dir: "G:/anime-renamer/QUARANTINE"
+
+rules:
+  default_season: 1
+  specials_season: 0
+  allowed_ext: ["mkv", "mp4", "avi"]
+
+  # Folder name created under each series for extras
+  extras_dirname: "extras"
+
+  # keyword -> bucket folder name (Jellyfin extras buckets)
+  extras_map:
+    "NCOP": "other"
+    "NCED": "other"
+    "OP": "other"
+    "ED": "other"
+    "OPENING": "other"
+    "ENDING": "other"
+    "PV": "trailers"
+    "TRAILER": "trailers"
+
+series:
+  overrides: {}
+  # Example:
+  # overrides:
+  #   "Shigatsu wa Kimi no Uso": "Your Lie in April"
+
+perplexity:
+  enabled: true
+  api_key: "" 
+  model: ""
